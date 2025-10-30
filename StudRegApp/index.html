@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Student Registration System</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="student.css">
+    </head>
+    <body>
+        <header>
+            <h1>Student Registration System</h1>
+            <p>This is the application system for registering,editing and managing the student details effectively.</p>
+        </header>   
+        <Main>
+            <form id="studentForm">
+                <div class="form-control">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" placeholder="Please enter name (Eg: A.Nardendra)" name="studentName" required>
+                </div>
+                <div class="form-control">
+                    <label for="studentId">Student ID:</label>
+                    <input type="number" id="studentId" placeholder="Please enter ID" name="studentId" required>
+                </div>
+                <div class="form-control">
+                    <label for="email">Student Email:</label>
+                    <input type="email" id="email" placeholder="Please enter email(eg:xyz@gmail.com)" name="email" autocomplete="off" required>
+                </div>
+                <div class="form-control">
+                    <label for="contactNo">Student ContactNo:</label>
+                    <input type="tel" id="contactNo" placeholder="Please Enter Contact number(eg.63xxxxxxx1)" name="ContactNo" required>
+                </div>
+                <button type="submit" id="submitBtn">Register Student</button>
+            </form>
+            <section id="studentRecords">
+            <h2>Registered Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No.</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="recordsContainer"></tbody>
+            </table>
+        </section>
+        </Main>    
+
+        <script src="student.js" defer></script>
+    </body>
+</html>
